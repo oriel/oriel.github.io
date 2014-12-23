@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)http://www.cs.cornell.edu/projects/light_compositing/ -->
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion Driven Tonal Stabilization</title>
+<link href="./TonalStabilizationICIP_files/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="./TonalStabilizationICIP_files/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./TonalStabilizationICIP_files/respond.min.js"></script>
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div class="warp">
+    <!-- <div class="box"> -->
+      <h1>Motion Driven Tonal Stabilization</h1>
+    <!-- </div> -->
+    <div class="affiliations_box">
+		<a href="http://www.cs.cornell.edu/~iboy/">Oriel Frigo</a> (<em>Université Paris Descartes</em>), 
+		<a href="http://people.csail.mit.edu/sparis/">Julie Delon</a> (<em>Université Paris Descartes</em>), 
+		<a href="http://www.cs.cornell.edu/~kb/">Neus Sabater</a> (<em>Technicolor</em>)
+		<a href="http://www.cs.cornell.edu/~kb/">Pierre Hellier</a> (<em>Technicolor</em>)    </div>
+    <!-- <p class="download_link_box">[ <a href="http://www.cs.cornell.edu/projects/light_compositing/download/light_compositing_lowres.pdf" title="low_res_paper">Paper Low-res PDF, 7MB</a><a href="http://www.cs.cornell.edu/projects/light_compositing/download/ct12/ctcloth-sg12.pdf"></a> ]  [ <a href="http://www.cs.cornell.edu/projects/light_compositing/download/light_compositing_hires.pdf" title="high_res_paper">Paper High-res PDF, 43MB</a> ]  </p> -->
+  </div>
+  <div class="warp">
+         <p><b>Abstract:</b> Automatic white balance and automatic exposure are common features of consumer digital cameras, which are intended respectively to provide color balanced and well exposed images, while facilitating the user experience. However, the malfunction of these features can result in unpleasant tonal instabilities that are especially perceived in videos.  A notable problem with automatic white balance algorithms is their dependency on illuminant estimation, which is considered an ill-posed problem, needed to be approached by strong assumptions about the scene content. Assumptions such as grey world and max rgb are easily violated in practice  and in a context of temporal scene changes, it is likely to result in chromatic instability. Automatic exposure, on the other hand, is a crucial feature of the camera coping with inherent limitations of dynamic range. However, fast exposure changes in a video footage can be unpleasant to the viewer, so a temporal smoothing of fast varying exposures can potentially enhance the perceived quality of the video. Stabilizing the exposure could also be useful for computer vision applications that rely on brightness constancy assumption (tracking, optical flow).</p>
+    <p><br>
+      In this work, we present a fast and parametric method to achieve tonal stabilization in videos containing color fluctuations. Our main contribution is to compensate tonal instabilities with a power law color transformation guided by dominant motion between temporally distant frames. Furthermore, we propose a temporal weigthing scheme, where the intensity of tonal stabilization is directly guided by the motion speed. The method is suitable for real time applications and experiments show that it compares favorably with the state-of-the-art in terms of accuracy and complexity. 
+    </p>
+ 
+    <!-- <div class="warp"> -->
+
+    <!--   <table width="100%"> -->
+    <!-- 	<img src="./TonalStabilizationICIP_files/top.png" width="60%" alt=""> -->
+
+    <!--     <tbody><tr> -->
+    <!--   <\!--     <td width="33%"><a href="http://www.cs.cornell.edu/projects/light_compositing/img/teaser_cic_cafe/teaser_input_layout16.png"><img src="./TonalStabilizationICIP_files/teaser_input_layout16_small.png" alt="Input" class="warp"></a></td> -\-> -->
+    <!--   <\!--     <td width="33%"><a href="http://www.cs.cornell.edu/projects/light_compositing/img/teaser_cic_cafe/user3_5m.png"><img src="./TonalStabilizationICIP_files/user3_5m_small.png" alt="Design#1"></a></td> -\-> -->
+    <!--   <\!--     <td width="33%"><a href="http://www.cs.cornell.edu/projects/light_compositing/img/teaser_cic_cafe/user2_8m.png"></a></td> -\-> -->
+    <!--   <\!--   </tr> -\-> -->
+    <!--   <\!--   <tr> -\-> -->
+    <!--   <\!--     <td align="center" valign="middle" class="teaser_td">Input images (16 out of 112)</td> -\-> -->
+    <!--   <\!--     <td class="teaspoer_td">Possible lighting design #1</td> -\-> -->
+    <!--   <\!--     <td align="center" class="teaser_td">Possible lighting design #2</td> -\-> -->
+    <!--     </tr> -->
+    <!--   </tbody></table> -->
+    <!-- </div> -->
+   
+    <h4>Video:</h4>
+   <iframe src="./TonalStabilizationICIP_files/64976852.html" width="500" height="282" frameborder="0"></iframe>
+    <p>&nbsp;</p>
+    <h4>Links:</h4>
+    <ul>
+      <li>Supplemental material [ <a href="http://www.cs.cornell.edu/projects/light_compositing/download/light_compositing_supplemental.pdf">PDF, 22MB</a> ]</li>
+      <li>Video data [ <a href="http://www.cs.cornell.edu/projects/light_compositing/download/light_compositing_input_data.zip">ZIP, 3.7GB</a> ]</li>
+    </ul>
+    <h4>Acknowledgments</h4>
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+  <div class="warp">
+    <table width="100%">
+      <tbody><tr>
+        <td width="50%"><a href="http://validator.w3.org/check?uri=referer"><img src="./TonalStabilizationICIP_files/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a></td>
+      </tr>
+    </tbody></table>
+  </div>
+</div>
+
+
+</body></html>

@@ -1,0 +1,208 @@
+body {
+font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+font-size: 13px;
+background: #ccc;
+}
+
+A:link { color: #4060EE }
+A:visited { color: #4060EE }
+A:hover { color: #FF0000 }
+
+img {
+border-style: none;
+}
+
+img.paper {
+border-style: solid;
+border-width: 1px;
+border-color: #aaa;
+}
+
+img:hover.paper {
+border-color: #000;
+}
+
+table {
+	table-layout: fixed;
+	max-width: 100%;
+}
+
+h1 {
+font-size: 23px;
+text-align: center;
+}
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+h3 {
+font-size: 16px;
+text-align: left;
+margin: 5px 0 5px 0;
+}
+
+h4 {
+font-size: 13px;
+text-align: left;
+margin: 2px 0 2px 0;
+}
+
+p {
+text-align: justify;
+}
+
+p.teaser {
+text-align: center;
+}
+
+
+div {
+	padding: 10px 0 10px 0;
+}
+
+div.warp {
+	width: 90%;
+	margin: 15px auto 15px auto;
+	border: 1px #aaa solid;
+	padding: 10px 15px 10px 15px;
+	background: #fff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	box-shadow: 3px 3px 10px #999999;
+	-moz-box-shadow: 3px 3px 10px #999999;
+	-webkit-box-shadow: 3px 3px 10px #999999;
+	text-align: center;
+}
+
+div.box {
+	margin: 5px;
+	padding: 5px 15px 5px 15px;
+	background: #ddd;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	box-shadow: 3px 3px 10px #999999;
+	-moz-box-shadow: 3px 3px 10px #999999;
+	-webkit-box-shadow: 3px 3px 10px #999999;
+	text-align: center;
+}
+
+hr {
+margin-top: 15px;
+border: 0;
+color: #aaa;
+background-color: #aaa;
+height: 1px;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: 20px;
+	text-align: left;
+}
+
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	float: right;
+	max-height: 100%;
+	height: auto;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 92.625%;
+	padding-left: 1.1875%;
+	padding-right: 1.1875%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+.my_table {
+	width: 100%;
+	table-layout: fixed;
+}
+.affiliations_box {
+	text-align: center;
+	width: 100%;
+}
+#acm_siggraph_box {
+	text-align: center;
+}
+.siggraph_box {
+	text-align: center;
+}
+.download_link_box {
+	text-align: center;
+}
