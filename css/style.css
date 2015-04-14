@@ -1,7 +1,7 @@
 body {
 font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
 font-size: 13px;
-background: #ccc;
+background: black;
 }
 
 A:link { color: #4060EE }
@@ -53,8 +53,11 @@ p {
 text-align: justify;
 }
 
-p.teaser {
-text-align: center;
+img.teaser {
+display:block;
+width:95%;
+padding:10px 20px 10px 10px;
+margin-bottom: 20px;
 }
 
 
