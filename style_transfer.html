@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- 
+	 To learn more about the conditional comments around the html tags at the top of the file:
+	 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+	 Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+	 * insert the link to your js here
+	 * remove the link below to the html5shiv
+	 * add the "no-js" class to the html tags at the top
+	 * you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+      -->
+    <!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="./TonalStabilizationICIP_files/respond.min.js"></script>
+
+  </head>
+  <body>
+    <div class="gridContainer clearfix">
+      <div class="warp">
+	<!-- <div class="box"> -->
+	<h1>Split and Match: Example-based Adaptive Patch Sampling for Unsupervised Style Transfer</h1>
+	<!-- </div> -->
+	<div class="affiliations_box">
+	  <a href="http://oriel.github.io">Oriel Frigo</a> (<em>University Paris Descartes / Technicolor</em>), 
+	  <a href="http://www.technicolor.com/en/neus-sabater">Neus Sabater</a> (<em>Technicolor</em>)
+	  <a href="http://delon.wp.mines-telecom.fr">Julie Delon</a> (<em>University Paris Descartes</em>), 
+	  <a href="http://www.technicolor.com/en/pierre-hellier">Pierre Hellier</a> (<em>Technicolor</em>)    </div>
+
+      </div>
+
+
+      <div class="warp">
+
+	<img class="teaser" src="img/style_transfer.png" />
+
+	<p><b>Abstract:</b></p>
+
+	<p>This paper presents a novel unsupervised method to transfer the style of an example image to a source image. The complex notion of image style is here considered as a local texture transfer, eventually coupled with a global color transfer. For the local texture transfer, we propose a new patch-based method based on an adaptive partition that captures the style of the example image and preserves the structure of the source image. More precisely, this example-based partition predicts how well a source patch matches an example patch. Results on various images show that out method outperforms the most recent techniques.</p>
+
+	<p>&nbsp;</p>
+	<h4>Downloads:</h4>
+	<ul>
+	  <li>CVPR 2016 Paper [ <a href="pdf/frigo_cvpr2016_cameraready.pdf"> pdf </a> ]</li>
+	</ul>
+
+	<p>&nbsp;</p>
+
+	<h4>Some results:</h4>
+
+	<table border=0 align="center">
+	  <tr>
+	    <td>
+	      <p><BR>
+	      </p>
+	    </td>
+	    <td align="center" valign="bottom">
+	      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	      <img align="center" valign="bottom" src="img/table_cat_html_html_2ae5e699.jpg" WIDTH=300  BORDER=0> 
+	    </td>
+	    <td>
+	      <img align="center" valign="bottom" src="img/table_cat_html_html_m53ffcf3b.jpg" WIDTH=300 BORDER=0>
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td>
+	      <P><BR>
+	      </P>
+	    </td>
+	    <td align="center" valign="bottom">
+	      Example 1: Van Gogh's Starry Night
+	    </td>
+	    <td align="center" valign="bottom">
+	      Example 2: Seurat's Woman
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_31c087ca.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_m7d783461.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_m7d521271.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td align="center" valign="middle">
+	      Input 1: Cat image
+	    </td>
+	    <td align="center" valign="middle">
+	      Input 1, stylized by Example 1
+	    </td>
+	    <td align="center" valign="middle">
+	      Input 1, stylized by Example 2
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_3e6b9778.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_31636629.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	    <td>
+	      <p ><img src="img/table_cat_html_html_694ac219.jpg" WIDTH=300 HEIGHT=300 BORDER=0><BR>
+	      </p>
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td align="center" valign="middle">
+	      Input 2: Venice image
+	    </td>
+	    <td align="center" valign="middle">
+	      Input 2, stylized by Example 1
+	    </td>
+	    <td align="center" valign="middle">
+	      Input 2, stylized by Example 2
+	    </td>
+	  </tr>
+	</table>
+
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+      </div>
+
+
+</body></html>
