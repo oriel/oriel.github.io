@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimal Transportation for Example-Guided Color Transfer</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./TonalStabilizationICIP_files/respond.min.js"></script>
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div class="warp">
+    <!-- <div class="box"> -->
+      <h1>Optimal Transportation for Example-Guided Color Transfer</h1>
+    <!-- </div> -->
+    <div class="affiliations_box">
+		<a href="http://oriel.github.io">Oriel Frigo</a> (<em>University Paris Descartes / Technicolor</em>), 
+		
+		<a href="http://www.technicolor.com/en/neus-sabater">Neus Sabater</a> (<em>Technicolor</em>), 
+		<a href="http://www.technicolor.com/en/vincent-demoulin">Vincent Demoulin</a> (<em>Technicolor</em>), 
+
+		<a href="http://www.technicolor.com/en/pierre-hellier">Pierre Hellier</a> (<em>Technicolor</em>)    </div>
+
+  </div>
+
+
+   <div class="warp">
+
+     <img class="teaser" src="img/color_transfer/metho_high.jpg" />
+
+       <ul>
+      <li>O. Frigo, N. Sabater, V. Demoulin, P. Hellier, <i>Optimal Transportation for Example-Guided Color Transfer</i>, ACCV, 2014. [<a href="pdf/Frigo2014-Color_transfer.pdf">pdf</a>] [<a href="pdf/poster_accv14_reduced.pdf">poster</a>]</li>
+      </ul>
+
+     <p><b>Abstract:</b> In this work, a novel and generic method for example-based color transfer is presented. The color transfer is formulated in two steps: first, an example-based Chromatic Adaptation Transform (CAT) has been designed to obtain an illuminant matching between input and example images. Second, the dominant colors of the input and example images are optimally mapped. The main strength of the method comes from using optimal transportation to map a pair of meaningful color palettes, and regularizing this mapping through thin plate splines. In addition, we show that additional visual or semantic constraints can be seamlessly incorporated to obtain a consistent color mapping. Experiments have shown that the proposed method outperforms state-of-the-art techniques for challenging images. In particular, color mapping artifacts have been objectively assessed by the Structural Similarity (SSIM) measure, showing that the proposed approach preserves structures while transferring color. Finally, results on video color transfer show the effectiveness of the method.
+
+
+    <h4>Some results of Color Transfer for Video:</h4>
+   <iframe width="900" src="color_transfer_alice.html" height="700" frameborder="0"> 
+   </iframe>
+
+   <iframe width="900" src="color_transfer_persepolis.html" height="700" frameborder="0"> 
+   </iframe>
+
+   <iframe width="900" src="color_transfer_saarburg.html" height="700" frameborder="0"> 
+   </iframe>
+
+    <p>&nbsp;</p>
+  </div>
+
+
+</body></html>
