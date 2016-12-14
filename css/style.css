@@ -61,6 +61,15 @@ padding:10px 20px 10px 10px;
 margin-bottom: 20px;
 }
 
+img.oriel {
+display:block;
+clear: both;
+float: left;
+width:100px;
+/* padding:10px 20px 10px 10px; */
+margin: 50px 20px 10px 50px;
+}
+
 
 div {
 	padding: 10px 0 10px 0;
