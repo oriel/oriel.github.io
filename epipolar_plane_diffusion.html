@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epipolar Plane Diffusion: An efficient approach for Light Field Editing</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./TonalStabilizationICIP_files/respond.min.js"></script>
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div class="warp">
+    <!-- <div class="box"> -->
+      <h1>Epipolar Plane Diffusion: An efficient approach for Light Field Editing</h1>
+    <!-- </div> -->
+    <div class="affiliations_box">
+		<a href="http://oriel.github.io">Oriel Frigo</a> (<em>INRIA</em>), 
+		
+		<a href="http://people.rennes.inria.fr/Christine.Guillemot/">Christine Guillemot</a> (<em>INRIA</em>)
+    </div>
+
+  </div>
+
+
+   <div class="warp">
+
+     <img class="teaser" src="img/epipolar_plane_diffusion/schema.png" />
+
+       <ul>
+	 <li>O. Frigo, C. Guillemot, <i>Epipolar Plane Diffusion: An efficient approach for Light Field Editing</i>, BMVC, 2017. [<a href="pdf/frigo_bmvc2017.pdf">pdf</a>]</li>
+      </ul>
+
+     <p><b>Abstract:</b>
+This paper presents a novel approach for light field editing. The problem of propagating an edit from a single view to the remaining light field is solved by a structure tensor driven diffusion on the epipolar plane images. The proposed method is shown to be useful for two applications: light field inpainting and recolorization. While the light field recolorization is obtained with a straightforward diffusion, the inpainting application is particularly challenging, as the structure tensors accounting for disparities are unknown under the occluding mask. We address this issue with a disparity inpainting by means of an interpolation constrained by superpixel boundaries. Results on synthetic and real light field images demonstrate the effectiveness of the proposed method.
+
+    <h4>Recolorization and inpainting results:</h4>
+   <iframe width="900" src="epd_video1.html" height="700" frameborder="0"> 
+   </iframe>
+     <p>&nbsp;</p>
+
+         <h4>Additional inpainting results:</h4>
+   <iframe width="900" src="epd_video2.html" height="700" frameborder="0"> 
+   </iframe>
+    <p>&nbsp;</p>
+     
+  </div>
+
+
+</body></html>
